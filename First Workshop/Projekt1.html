@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lust auf Gyros</title>
+  </head>
+  <style>
+    html {
+      background-color: white;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ee502f;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      border: 1px solid #ee502f;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 60%;
+      border-radius: 10px;
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.5;
+      font-size: 16px;
+      margin: 20px 0 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+      display: block;
+      margin: 15px auto;
+      background: #ee502f;
+      color: white;
+      font-size: 15px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 15px 60px;
+      background: linear-gradient(
+        177deg,
+        rgba(255, 234, 159, 1) 0%,
+        rgba(236, 199, 153, 1) 57%,
+        rgba(252, 252, 252, 1) 100%
+      );
+    }
+    .restaurant {
+      display: block;
+      text-align: center;
+      color: #ee502f;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .restaurant:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Hier gibts Gyros!</h1>
+      <h2>Und zwar das beste Gyros auf der ganzen Welt! 🥙</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/663/original/Pork-Gyros-with-Homemade-Tzatziki-square-FS.jpg?1625922199"
+        alt="Gyros"
+      />
+      <p>
+        <strong>Gyros</strong> <br />
+        <em>[ˈgy:rɔs; griechisch]</em> <br />
+        griechisches Gericht, meist aus gewürztem Schweinefleisch, das an einem
+        senkrechten Drehspieß gegrillt und in dünnen Streifen abgeschnitten
+        wird. Da läuft einem einfach nur das Wasser im Mund zusammen.
+      </p>
+      <hr />
+      <a
+        href="https://akropolis-eller.business.site/?utm_source=gmb&utm_medium=referral"
+        target="_blank"
+        class="restaurant"
+        >Wo und wie du auch mit Gyros verwöhnt wirst? Finde mehr heraus! 🔍</a
+      >
+      <button class="subscriptionButton">
+        👉 Melde dich für noch mehr Tipps. 100% lecker!
+      </button>
+      <p class="footer">Diese Seite wurde gebaut von Carla.</p>
+    </div>
+    <script>
+      function subscription() {
+        let name = prompt("Wie heißt du?");
+        let email = prompt("Was ist deine E-Mail Adresse?");
+        let city = prompt("In welcher Stadt wohnst du? 👨‍🚀");
+
+        alert(
+          "Danke " +
+            name +
+            "! Wir melden uns bald mit spannenden Tipps aus " +
+            city +
+            " bei dir! Solange genieße deinen Gyros 😜"
+        );
+      }
+      let subscriptionButton = document.querySelector(".subscriptionButton");
+      subscriptionButton.addEventListener("click", subscription);
+    </script>
+  </body>
+</html>

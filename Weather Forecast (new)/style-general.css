@@ -1,0 +1,97 @@
+html {
+  top: 5%;
+  left: 27%;
+  right: auto;
+  display: block;
+  position: absolute;
+}
+
+body {
+  background-color: #f6f6f6;
+  color: black;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 100;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.container {
+  width: 600px;
+  box-align: center;
+  align-items: center;
+  margin: 20px 20px;
+  padding: 15px 60px;
+  border-radius: 20px;
+  background-color: white;
+  font-style: normal;
+  box-shadow: 5px 4px 12px 0px grey;
+}
+
+.container > div {
+  background-color: white;
+  padding: 10px;
+}
+
+.icon-today {
+  text-align: end;
+  width: 600%;
+}
+
+.currenttime {
+  text-align: center;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.h4 {
+  font-size: 12px;
+}
+
+/*CSS für Searchbar*/
+
+.active-cyan .fa,
+.active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 15px;
+}
